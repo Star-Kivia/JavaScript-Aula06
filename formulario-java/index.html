@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="estilo/estilo.css">
+</head>
+
+<body>
+    <form class="formulario">
+        <h1>Inscrição</h1>
+        <label>Nome Completo:<input type="text" required></label>
+        <label>Email:<input type="email" required></label>
+        <label>Data de Nascimento:<input type="date" required></label>
+        <label>Celular:<input type="tel" required></label>
+        <label>Telefone Residencial:<input type="tel"></label>
+
+        <div class="inline">
+            <label>Gênero:</label>
+            <label><input type="radio" name="genero" value="M" required> Masculino</label>
+            <label><input type="radio" name="genero" value="F"> Feminino</label>
+        </div>
+
+        <label>Forma de Ingresso:
+            <select required>
+                <option>Selecione</option>
+                <option>ENEM</option>
+                <option>Vestibular</option>
+                <option>Transferência</option>
+            </select>
+        </label>
+
+        <label>Curso:
+            <select required>
+                <option>Selecione</option>
+                <option>ADS</option>
+                <option>Engenharia</option>
+                <option>Design</option>
+            </select>
+        </label>
+
+        <label>Habilitação:<input type="text" required></label>
+        <label>Turno:<input type="text" required></label>
+
+        <label>Possui cupom?<input type="text" placeholder="Insira aqui"></label>
+        <button type="button" onclick="validarCupom()">Inserir Cupom</button>
+
+        <label>Data da Prova:<input type="date" required></label>
+        <label>Horário:<input type="time" required></label>
+        <label>Local:<input type="text" required></label>
+
+        <label>CPF:<input type="text" required></label>
+        <label>RG:<input type="text" required></label>
+        <label>Nacionalidade:<input type="text" required></label>
+
+        <label>CEP:<input type="text"></label>
+        <label>Endereço:<input type="text"></label>
+        <label>Nº:<input type="text"></label>
+        <label>Complemento:<input type="text"></label>
+        <label>Bairro:<input type="text"></label>
+        <label>Cidade:<input type="text"></label>
+
+        <label>Utilizar nome social?
+            <select>
+                <option>Não</option>
+                <option>Sim</option>
+            </select>
+        </label>
+
+        <label>Necessidades especiais?
+            <select>
+                <option>Não</option>
+                <option>Sim</option>
+            </select>
+        </label>
+
+        <label>Como deseja realizar a prova?
+            <div class="inline">
+                <label><input type="radio" name="tipo" value="presencial" required> Presencial</label>
+                <label><input type="radio" name="tipo" value="online"> On-line</label>
+            </div>
+        </label>
+
+        <button type="submit">Concluir</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
